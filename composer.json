@@ -1,5 +1,5 @@
 {
-    "name": "sp/jms-serializer-module",
+    "name": "demoniacdeath/jms-serializer-module",
     "description": "Zend Framework 2 Module that integrates the jms serializer library",
     "type": "library",
     "license": "MIT",
@@ -23,14 +23,13 @@
             "homepage": "https://github.com/Spea/JMSSerializerModule/contributors"
         }
     ],
-    "require": {
-        "php": ">=5.3.3",
-        "zendframework/zendframework": "2.*",
-        "doctrine/doctrine-module": ">=0.5.1",
-        "jms/serializer": "~0.11"
+    "replace": {
+        "sp/jms-serializer-module": "dev-master"
     },
-    "require-dev": {
-        "zendframework/zend-developer-tools": "dev-master"
+    "require": {
+        "php": ">=7.0",
+        "doctrine/doctrine-module": "^1.2",
+        "jms/serializer": "0.16.0"
     },
     "minimum-stability": "dev",
     "autoload": {
